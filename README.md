@@ -4,11 +4,11 @@ In 2019, Apple released a radically different framework for making apps: SwiftUI
 
 ## Prerequisites
 
-To best understand this article, you should be familiar with [Swift](https://www.geeksforgeeks.org/introduction-to-swift-programming/) and [UIKit](https://developer.apple.com/documentation/uikit). I will show code snippets using SwiftUI, so familiarity with swift is important. As well, I will reference certain different types of UIKit views to show similarities between UIKit and SwiftUI.
+To best understand this article, you should be familiar with [Swift](https://www.geeksforgeeks.org/introduction-to-swift-programming/) and [UIKit](https://developer.apple.com/documentation/uikit). I will show code snippets using SwiftUI, so familiarity with Swift is important. As well, I will reference certain different types of UIKit views to show similarities between UIKit and SwiftUI. Also, a basic understanding of how SwiftUI views are set up would be helpful to understanding this article. I would recommend reading the first few sections of this [website](https://www.answertopia.com/swiftui/creating-custom-views-with-swiftui/) to understand this topic.
 
 ## View Types
 
-In SwiftUI, views are composed of other views, so you define a view by using built-in views (or even your own subviews). For example, here is a simple view that shows the text "Hello World".
+In SwiftUI, views are composed of other views. What this allows you to do is define views using other views. For example, here is a simple view that shows the text "Hello World".
 
 ```swift
 struct HelloWorldView: View {
