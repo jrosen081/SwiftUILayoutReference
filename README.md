@@ -23,12 +23,18 @@ It is important to know how the size and layout of this view are determined. It 
 2. The child lays itself out using that size as a guide
 3. The parent respects the child's size, and lays it out in its current coordinates.
 
+### Wait, Respecting the Child's Size?
+
+You might be confused as to what this means, so let me explain with the `HelloWorldView`. The `HelloWorldView` gives the `Text` the proposed size of the whole screen. The `Text` decides it needs a much smaller region, and then lets the `HelloWorldView` know how much space it needs. The `HelloWorldView` respects that decision, meaning that it gives the `Text` all the space it needs, and then places the `Text` in the center of the `HelloWorldView`.
+
+### The 3 Types of Views
+
 While this may seem very simple, there is a hidden complexity in the second step. Not all views respond to that step in the same way. There are 3 types of views:
 1. Greedy views
 2. Intrinsic views
 3. Good Citizen views
 
-I will go through each one of these in depth, since depending on what you use, you will have very different experiences.
+Each specific base SwiftUI view is one of these types of views. The views you use will change the layout of the screen. I will go through each one of these in depth, since depending on what you use, you will have very different experiences.
 
 ### Greedy Views
 
@@ -72,4 +78,4 @@ Here is an example of a complex layout. See if you can figure out why the views 
 
 ## Conclusion
 
-This was a basic introduction into the layout system for SwiftUI. I hope it explained about the different types of views and how they interact. If you would like some more resources, here are some helpful links that explain more: https://www.swiftbysundell.com/articles/swiftui-layout-system-guide-part-1/ and https://crystalminds.medium.com/introducing-the-swiftui-layout-system-part-i-the-basics-42083aaaa5c7.
+This was a basic introduction into the layout system for SwiftUI. I hope it explained about the different types of views and how they interact. If you would like some more resources, here are some helpful links that explain more: https://www.swiftbysundell.com/articles/swiftui-layout-system-guide-part-1/ and https://crystalminds.medium.com/introducing-the-swiftui-layout-system-part-i-the-basics-42083aaaa5c7. Both of these give a great introduction into the layout system, with the first focusing more on how stacks (such as VStack) affect the layout, while the second focuses on how modifiers to views affect the view's sizing.
