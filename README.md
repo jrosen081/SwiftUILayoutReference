@@ -1,4 +1,5 @@
 # Layout in SwiftUI
+**By Jack Rosen**
 
 In 2019, Apple released a radically different framework for making apps: SwiftUI. It is a reactive framework, meaning that any changes in your state are automatically re-rendered in the view. It is also a declarative framework, meaning that you say how the view should look, and SwiftUI does the hard work in making the views look as expected on the screen. Since this is such a different change from the previous app-making experience using UIKit, it can be confusing to figure out how SwiftUI makes decisions on how to display the view. That is the purpose of this document: to explain the layout system.
 
